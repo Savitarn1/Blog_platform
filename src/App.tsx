@@ -68,7 +68,7 @@ const App = () => {
           <Link to={'/'}>
             <Image
               w={'4rem'}
-              src='../src/assets/react.svg'
+              src='/assets/react.svg'
               alt='React Icon'
               className='hover:opacity-50 transition-all'
             />
@@ -76,7 +76,7 @@ const App = () => {
         ) : (
           <img
             className='w-15'
-            src='../src/assets/react.svg'
+            src='/assets/react.svg'
             alt='React Icon'
           />
         )}
