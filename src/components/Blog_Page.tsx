@@ -9,7 +9,15 @@ const Blog_Page = ({ posts , addLike}: Props) => {
   return (
     <HStack flexWrap={'wrap'} justifyContent={'space-between'} gap={10}>
       {posts.map((post) => (
-        <Card.Root w='30%' overflow='hidden' key={post.id}>
+        <Card.Root
+          w={{
+            base: '100%',
+            md: '45%',
+            lg: '30%',
+          }}
+          overflow='hidden'
+          key={post.id}
+        >
           <Image
             src={post.img}
             alt={post.title}
